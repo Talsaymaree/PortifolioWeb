@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+
+
+body{
+  overflow-x: hidden;
+  
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  animation: colorchange 14.1s; /* animation-name followed by duration in seconds*/
+  /* you could also use milliseconds (ms) or something like 2.5s */
+-webkit-animation: colorchange 7.1s; /* Chrome and Safari */
+animation-iteration-count:infinite;
+/* background-color: #121212; */
+color: white;
+
+}
+
+.videoContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.videoContainer iframe{
+  margin-left: 1vw;
+  padding-bottom: 2vh;
+  width: 20vw;
+  height: 20vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+width: 100vw;
+height: 100vh;
+
+}
+
+@keyframes colorchange
+{
+  0%   {background: #121212;}
+  25%  {background: #ac8404;}
+  50%  {background: #93BFC8;}
+  75%  {background:#04ac50;}
+  100% {background: #121212;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: #121212;}
+  25%  {background: #ac8404;}
+  50%  {background: #93BFC8;}
+  /* 75%  {background: green;} */
+  100% {background: #121212;}
+}
+
+
+.heading-background{
+
+  position: fixed;
+  opacity: .79;
+  font-size: 20vw;
+  /* left:-0.2em; */
+margin-left: 4vw;
+  top:-0.5em;
+  color:#ac8404;
+ 
+}
+
+
+
+.header-title img{ 
+
+object-fit: cover;
+height: 100vh;
+width: 100vw; 
+
+
+}
+
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  opacity: .9;
+  z-index: 100;
+}
+nav li{
+  display: inline-block;
+  cursor: pointer;
+color: red;
+}
+nav li .link{
+  text-decoration: none;
+  color: white;
+
+  padding:.01vw;
+  margin-right: 2vw;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+li .link:hover{
+  opacity: 1;
+  color:gray;
+}
+.active{
+  
+  opacity: 1;
+}
+
+
+
+.About{  
+  padding-top: 10vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left:20vw;
+  padding-bottom: 40vh;
+}
+
+#about-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: left;
+  margin-top: -6vh;
+}
+
+.about-image-text{ 
+  margin-top: -37vh;
+ margin-left: 18vw;
+  display: flex;
+  flex-direction: column;
+}
+.about-image-text p{
+
+width: 30vw;
+text-align: justify;
+font-size: .7em;
+
+}
+
+#imgone{
+  margin-top: 20vh;
+  margin-left: -20vw;
+  opacity: .6;
+  width:  60vw;
+  z-index: -1;
+}
+#imgtwo {
+  display: none;
+ 
+  width: 20em;
+  
+}
+.work{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+margin-left: 20vw;
+padding-bottom: 50vh;
+}
+.work .heading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: left;
+}
+.work .work-content{
+  display: flex;
+  flex-direction: row;
+}
+#bandcamp{
+  margin-left: 0vw;
+  width: 25vw;
+  height: 20vh;
+}
+.project img{
+width: 10em;  
+height: 10em;
+}
+.project {
+font-size: .5em;
+margin-left: 3vw;
+text-align: center;
+}
+
+.headingVideo{
+  margin-top: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: left;
+}
+.contact h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: left;
+  margin: -.2vh;
+}
+
+.contact .email{
+  color:white;
+  font-size: 2em;
+  margin-left: 1vw;
+margin-top: 3vh;
+}
+
+.liveset-container iframe{
+  width: 60vw;
+  height: 60vh;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-device-width: 320px) and (max-device-width : 480px){
+
+  body{
+    font-size: 6px;
+  }
+  header h1{ 
+
+
+}
+.header-title {
+  height: 100vh;
+  opacity: .75;
+  
+  }
+#about-text{
+  margin-top: 0vh;
+  margin-left: 0vw;
+  font-size: 1em;
+}
+.about-image-text p{
+
+  width: 50vw;
+  font-size: 1.5em;
+  
+  }
+nav{
+
+font-size: small;
+margin-top: -2vh;
+margin-left: -10vw;
+height: 5vh;
+opacity: .8;
+width: 1vw;
+background-color: #121212;
+
+}
+  .videoContainer{
+    display: flex;
+    flex-direction: column;
+  }
+nav li .link{
+  
+  padding: 1vw;
+  opacity: 1;
+  color: white;
+}
+.heading-background{
+  /* display: none; */
+position: fixed;
+margin-top: 70vh;
+margin-left: 4vw;
+
+}
+
+.About{
+
+  align-items: flex-start;
+  margin-left: 20vw;
+      top: 10em;
+      color: white;
+      z-index: 1;
+      height: 100vh;
+      padding-bottom: 60vh;
+
+}
+
+#imgtwo{
+
+}
+#imgone{
+  margin-left: -20vw;
+  width:50em;
+  z-index: -1;
+}
+
+#bandcamp{
+  width: 70vw;
+}
+.work{
+  align-items: flex-start;
+  left: 0;
+  margin-right: 10vw;
+  padding-bottom: 140vh;
+}
+.work .project{
+  margin-top: 3vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  font-size: .6em;
+}
+.work iframe{
+  margin-top: 3vh;
+  margin-left: -4vw;
+  width: 70vw;
+  height: 20vh;
+  opacity: .9;
+}
+.project img{
+width: 20em;  
+height: 20em;
+}
+.contact{
+  align-items: flex-end;
+  left: 0;
+  margin-left: 1vw;
+  margin-top: 10vh;
+}
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+body{
+  }
+
+
+nav{
+  display: none;
+}
+
+.About{
+  align-items: flex-start;
+      top: 10em;
+      color: white;
+      z-index: 1;
+      height: 100vh;
+      padding-bottom: 60vh;
+}
+#bandcamp{
+  width: 40vw;
+}
+ 
+.videoContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.work{
+  align-items: flex-start;
+  left: 0;
+  margin-right: 10vw;
+  padding-bottom: 80vh;
+}
+.work .project{
+  margin-top: 3vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  font-size: .6em;
+}
+.work iframe{
+  margin-top: 3vh;
+  margin-left: -4vw;
+  width: 70vw;
+  height: 40vh;
+  opacity: .9;
+}
+.project img{
+width: 20em;  
+height: 20em;
+}
+.contact{
+display: none;
+}
+
+.contact h1{
+  font-size: 4em;
+}
+.contact .email{
+  margin-left: 1vh;
+  font-size: 3.5em;
+}
+
+}
+
+/* Large screens ----------- */
