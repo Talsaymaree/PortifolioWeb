@@ -4,15 +4,9 @@
 body{
   overflow-x: hidden;
   
-  background: white;
+  background-color: #1F1B24;
   font-family: 'Open Sans', sans-serif;
-  animation: colorchange 14.1s; /* animation-name followed by duration in seconds*/
-  /* you could also use milliseconds (ms) or something like 2.5s */
--webkit-animation: colorchange 7.1s; /* Chrome and Safari */
-animation-iteration-count:infinite;
-/* background-color: #121212; */
-color: white;
-
+  color: white;
 }
 
 .videoContainer{
@@ -35,43 +29,22 @@ height: 100vh;
 
 }
 
-@keyframes colorchange
-{
-  0%   {background: #121212;}
-  25%  {background: #ac8404;}
-  50%  {background: #93BFC8;}
-  75%  {background:#04ac50;}
-  100% {background: #121212;}
-}
-
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-{
-  0%   {background: #121212;}
-  25%  {background: #ac8404;}
-  50%  {background: #93BFC8;}
-  /* 75%  {background: green;} */
-  100% {background: #121212;}
-}
 
 
 .heading-background{
 
-  position: fixed;
   opacity: .79;
-  font-size: 20vw;
+  font-size: 1vw;
   /* left:-0.2em; */
-margin-left: 4vw;
-  top:-0.5em;
-  color:#ac8404;
+  text-align: center;
+  margin-top: 1vh;
  
 }
 
 
 
 .header-title img{ 
-
-object-fit: cover;
-height: 100vh;
+position: fixed;
 width: 100vw; 
 
 
@@ -116,13 +89,13 @@ li .link:hover{
 
 
 .About{  
-  padding-top: 10vh;
+  margin-top: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left:20vw;
-  padding-bottom: 40vh;
+  margin-left:10vw;
+  padding-bottom: 10vh;
 }
 
 #about-title{
@@ -133,16 +106,16 @@ li .link:hover{
 }
 
 .about-image-text{ 
-  margin-top: -37vh;
- margin-left: 18vw;
-  display: flex;
-  flex-direction: column;
+
+   margin-left: 18vw;
+
 }
 .about-image-text p{
 
-width: 30vw;
+width: 50vw;
 text-align: justify;
-font-size: .7em;
+font-size: 1em;
+padding-bottom: 10vh;
 
 }
 
@@ -245,7 +218,7 @@ margin-top: 3vh;
 nav{
 
 font-size: small;
-margin-top: -2vh;
+margin-top: 15vh;
 margin-left: -10vw;
 height: 5vh;
 opacity: .8;
@@ -264,10 +237,7 @@ nav li .link{
   color: white;
 }
 .heading-background{
-  /* display: none; */
-position: fixed;
-margin-top: 70vh;
-margin-left: 4vw;
+
 
 }
 

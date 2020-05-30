@@ -1,17 +1,17 @@
-import t from './images/t.jpg'
-import about from './images/about4.png'
+import t from './images/anomalypro.png'
+import about from './images/anomalypro.png'
 import aboutTwo from './images/about2.jpg'
 export default
     {
         //(Please Do Not Remove The comma(,) after every variable)
         //Change The Website Template
-        name :'+',
+        name :'A Divergence From the Standard',
         headerImage : t,
         ShowHeaderImage:true,
         //Contact Email
-        contactEmail:'kalibrpluslabel@gmail.com',
+        contactEmail:'info@anomalypro.com',
         // Add Your About Text Here
-        abouttext: "Talal Al Saymaree can be regarded as anything but your typical producer. Inspired by I.D.M., Vaporwave, the eclectic Brainfeeder label, Playstation Memory and Footwork. Ch4ins4w sets out to always be neck deep in an uncanny and, at times, euphoric waters. Never the one to shy away from taking left turns and injecting a healthy dose of humor into his productions, Talal doesn’t seem to try to subvert expectations, but his 4 full length albums speak volumes to his love for the foreign and off-kilter.",
+        abouttext: "Anomaly Productions specializes in event coordination and talent procurement for all tastes and occasions. Anomaly Productions is focused on tailoring the most unique performances from artists around the world, regardless of the occasion. Logistical Coordination, Talent procurement, Event Management and everything in between. Let us give your audiences, loved ones, guests, or customers an experience they will be grateful for.",
         aboutImage:about,
         aboutImageTwo:aboutTwo,
        //Change This To Hide The Image of About Section (True Or False)

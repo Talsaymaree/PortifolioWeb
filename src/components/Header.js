@@ -12,7 +12,7 @@ class Header extends Component {
            
 
 
-        <h1 className='heading-background'>Ch4ins4w
+        <h1 className='heading-background'>A Divergence From the Standard
         </h1>
             <header className='header-title'>
                
