@@ -1,6 +1,6 @@
-import t from './images/anomalypro.png'
+import t from './images/anom.jpg'
 import about from './images/anomalypro.png'
-import aboutTwo from './images/about2.jpg'
+import aboutTwo from './images/head/ifk1.jpg'
 export default
     {
         //(Please Do Not Remove The comma(,) after every variable)
