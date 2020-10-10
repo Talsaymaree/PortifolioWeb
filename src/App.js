@@ -20,6 +20,7 @@ function App() {
             
       </div>
  <TitleSlide></TitleSlide>
+ <div id='mbpad'>
       <div className='About'>
         <About></About>
       </div>
@@ -27,7 +28,7 @@ function App() {
 
         <Work></Work>        <EventSlide className="event"/>    
       </div>
-
+      </div>
       <div className='contact'>
         <Contact></Contact>
       </div>

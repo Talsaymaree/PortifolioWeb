@@ -83,11 +83,11 @@ height: 100vh;
   height: 60vh;
 }
 #poc{
-  
+  z-index: -1;
   width: 20vw;
-  height: 40vh;
-  margin-left: -22vw;
-  margin-top: -9vw;
+  height: 30vh;
+  margin-left: -20vw;
+  margin-top: -1vw;
 }
 #ssx{
   width: 25vw;
@@ -166,7 +166,7 @@ height: 100vh;
   flex-direction: column;
   width: 100vw;
    height: 10vh;
-margin-left: 20vw;
+margin-left: 26vw;
 overflow: hidden;
 }
 
@@ -184,8 +184,9 @@ overflow: hidden;
 
 #fix {
   z-index: -100;
-  padding-right: 25vw ;
-  width: 25vw;
+  padding-right: 0vw ;
+  width: 50vw;
+  height: 70vh;
 }
 .header-title img{ 
 position: fixed;
@@ -205,6 +206,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
+  margin-left: -2vw;
   font-size: 1em;
   opacity: .9;
   z-index: 100;
@@ -217,9 +219,9 @@ color: red;
 nav li .link{
   text-decoration: none;
   color: white;
+padding-left: -2vw;
 
-  padding:.01vw;
-  margin-right: 2vw;
+padding-right: 1vw;
   opacity: 1;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -255,10 +257,6 @@ li .link:hover{
   margin-top: -6vh;
 }
 
-.about-image-text{ 
-
-
-}
 .about-image-text p{
 
 width: 50vw;
@@ -325,7 +323,7 @@ text-align: center;
   text-justify: inter-word;
 }
 .contact{
-  margin-top: 75vh;
+  margin-top: 100vh;
   margin-left: .1vw;
   padding-right: 2vw;
 }
@@ -362,110 +360,218 @@ margin-top: 3vh;
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-device-width: 320px) and (max-device-width : 480px){
+  .artist-info img{
+    position: relative;
+    height:19.5vh;
+    z-index: -100;
+    padding-top: 1vh;
+  
+  }
+.artist-info{
+  margin-top: -25vh;
+}
+
+.artist-info img{
+
+}
+  .poster{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    
+    padding-bottom: 7vh;
+    text-align: justify;
+    text-justify: inter-word;
+  
+  }
+  #mbpad{
+    padding: 10vw;
+  }
+  #poc{
+    margin-left: 0vw;
+  padding-top: 16vw;
+    width: 70vw;
+    height: 35vh;
+    padding-bottom: 30vh;
+    
+
+    margin-top: -9vw;
+  }
+  #sauce #selector{
+    width: 70vw;
+  }
+
+  #statement{
+    width: 50vw;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .contact{
+    margin-top: 90vh;
+    margin-left: .1vw;
+    padding-right: 2vw;
+  }
+  .contact h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    text-align: left;
+    margin: -.2vh;
+  }
+
+  .header-title h1{ 
+    z-index: 100;
+    display: none;
+    
+    }
 
   body{
-    font-size: 6px;
+    font-size: .5em;
   }
-  header h1{ 
-
-
-}
-.header-title {
-  height: 100vh;
-  opacity: .75;
-  
+  #spotify-embed{
+    position: relative;
+    z-index: 100;
+    width: 71vw;
+    height:29.5vh;
+    margin-left:-1vw ;
+    padding-top:  2vh;
   }
-#about-text{
-  margin-top: 0vh;
-  margin-left: 0vw;
-  font-size: 1em;
-}
-.about-image-text p{
-
-  width: 50vw;
-  font-size: 1.5em;
-  
+  #ssx{
+    width: 18vw;
+    height: 18vh;
+    padding-left: 52vw;
+  margin-top: 44vh;
   }
-nav{
 
-font-size: small;
-margin-top: 15vh;
-margin-left: -10vw;
-height: 5vh;
-opacity: .8;
-width: 1vw;
-background-color: #121212;
+  .videoContainer iframe{
+    padding-top: 1vh;
+    width: 70vw;
+    height: 20vh;
+  }
+  nav{
+    margin-left: 0;
+    width: 5vw;
+    position: fixed;
+  }
+  .header-title { 
+    position: fixed;
+    width: 10vw; 
+    z-index: 100;
+    
+    
+    }
+  .About{
+    width: 75vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left:20vw;
+    z-index: 100;
+  }
+  .about-image-text p{
 
-}
-  .videoContainer{
+    width: 70vw;
+    text-align: justify;
+    font-size: 1em;
+    padding-bottom: 10vh;
+  }
+  .event{
+    position: relative;
+    flex-direction: column;
+    width: 20vw;
+     height: 100vh;
+  margin-left: 30vw;
+  overflow: hidden;
+
+  }
+  .each-fade {
+    position: absolute;
+    margin-top: -7vh;
+   height: 106vh;
+   width: 115vw;
+   overflow: hidden;
+  }
+
+  .each-fade img {
+   width: 20vw;
+  }
+  .event-name{
+    font-size: 2.2em;
+    margin-bottom: -.3vh;
+  }
+  .each-slide img{
+    display: block;
+    position: absolute;
     display: flex;
     flex-direction: column;
-  }
-nav li .link{
+    width: 70vw;
+    height: 40vh;
+    margin-bottom: 5vh;
   
-  padding: 1vw;
-  opacity: 1;
-  color: white;
+  }
+  .each-slide {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 10vh;
+  
+  }
+  .videoContainer{
+  display: flex;
+  flex-direction: column;
 }
-.heading-background{
+  #fix {
+    z-index: -100;
+    margin-top: 20vw ;
+    width: 70vw;
+    height: 30vh;
+  }
+  .heading-background{
 
+    opacity: .79;
+    font-size: 1vw;
+    /* left:-0.2em; */
+    text-align: center;
+    margin-top: 1vh;
+    width: 20 vw;
+    z-index: 100;
+   color: #CE4346;
+  }
+  .each-fade  img {
 
-}
+   width:500vw;
+  }
+  #backArrow{
+    width: 6vw; 
+    background-color: transparent;
+    outline: transparent;
+    box-shadow: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  #frontArrow{
+    width: 6vw;
+    background-color: transparent;
+    outline: transparent;
+    box-shadow: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  #bandcamp{
+  margin-left: 0vw;
+  width: 10vw;
+  height: 10vh;
 
-.About{
-
-  align-items: flex-start;
-  margin-left: 20vw;
-      top: 10em;
-      color: white;
-      z-index: 1;
-      height: 100vh;
-      padding-bottom: 60vh;
-
-}
-
-#imgtwo{
-
-}
-#imgone{
-  margin-left: -20vw;
-  width:50em;
-  z-index: 1;
-}
-
-#bandcamp{
-  width: 70vw;
-}
-.work{
-  align-items: flex-start;
-  left: 0;
-  margin-right: 10vw;
-  padding-bottom: 140vh;
-}
-.work .project{
-  margin-top: 3vh;
-  display: grid;
-  grid-template-rows: 1fr;
-  font-size: .6em;
 }
 .work iframe{
-  margin-top: 3vh;
-  margin-left: -4vw;
+  margin-top: 33vh;
+  margin-left: 0vw;
   width: 70vw;
-  height: 20vh;
+  height: 10vh;
   opacity: .9;
 }
-.project img{
-width: 20em;  
-height: 20em;
-}
-.contact{
-  align-items: flex-end;
-  left: 0;
-  margin-left: 1vw;
-  margin-top: 10vh;
-}
-
 
 }
 

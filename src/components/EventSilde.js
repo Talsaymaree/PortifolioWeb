@@ -68,7 +68,7 @@ const TitleSlide = () => {
                  
             </div>
             <div className='artist-info'>
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302617354&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+            <iframe id='dvdvsc' width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302617354&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
                    <img  src={fadeImages[3]} />
                    <iframe id='spotify-embed' src="https://open.spotify.com/embed/artist/5BcginI7QeBe0qNsOyW7SR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                   <p> CH4iNS4W <a href="https://linktr.ee/ch4ins4w">https://linktr.ee/ch4ins4w</a> </p>
@@ -81,7 +81,7 @@ const TitleSlide = () => {
           </div>
 
 
-          <div className="each-slide"> 
+          <div className="each-slide" id='sauce'> 
            <div className='poster'>         
               <div id='selector'>
               <h1 className='event-name'><div className="autoplay-buttons"> <button id='backArrow' type="button" onClick={back}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></button>
