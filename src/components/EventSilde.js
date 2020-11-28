@@ -58,7 +58,7 @@ const TitleSlide = () => {
                      Only made possible with the support of our family from the one and only Juke Productions.
                     With additional local support from vendors at WUFU Dumpling Bar and The Enlited Store.
                   </p>            
-                  <img  src={fadeImages[4]} />
+                  <img id='dvdv'  src={fadeImages[4]} />
                   <p> DVDV <a href="http://dvdv.space/">http://dvdv.space/</a> </p>
 
                   
